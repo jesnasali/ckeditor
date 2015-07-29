@@ -1,0 +1,21 @@
+{
+    "name": "jesnasali/jesnasali-ckeditor",
+    "description": "CKEditor Widget for Yii2",
+    "type": "yii2-extension",
+    "keywords": ["ckeditor"],
+    "license": "GPL-3.0+",
+    "authors": [
+        {
+            "name": "Muhammad Ali",
+            "email": "jesnasali@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "jesnasali\\ckeditor\\": ""
+        }
+    }
+}
