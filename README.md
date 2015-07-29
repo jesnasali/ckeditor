@@ -10,7 +10,7 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist jesnasali/jesnasali-ckeditor "*"
+php composer.phar require --prefer-dist jesnasali/ckeditor "*"
 ```
 
 or add
@@ -31,7 +31,7 @@ Using a model with a basic preset:
 
 ```
 
-use dosamigos\ckeditor\CKEditor;
+use jesnasali\ckeditor\CKEditor;
 
 
 <?= $form->field($model, 'text')->widget(CKEditor::className(), [
@@ -43,7 +43,7 @@ Using inline edition with basic preset:
 
 ```
 
-use dosamigos\ckeditor\CKEditorInline;
+use jesnasali\ckeditor\CKEditorInline;
 
 <?php CKEditorInline::begin(['preset' => 'basic']);?>
     This text can be edited now :)
