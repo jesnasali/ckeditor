@@ -16,7 +16,7 @@ php composer.phar require --prefer-dist jesnasali/ckeditor "*"
 or add
 
 ```
-"jesnasali/jesnasali-ckeditor": "*"
+"jesnasali/ckeditor": "*"
 ```
 
 to the require section of your `composer.json` file.
