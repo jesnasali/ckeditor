@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 CKEditor Widget for Yii2
 ========================
 CKEditor Widget for Yii2
@@ -25,11 +24,27 @@ to the require section of your `composer.json` file.
 
 Usage
 -----
+The library comes with two widgets: `CKEditor` and `CKEditorInline`. One is for classic edition and the other for inline
+editing respectively.
 
-Once the extension is installed, simply use it in your code by  :
+Using a model with a basic preset:
 
-```php
-<?= \jesnasali\ckeditor\AutoloadExample::widget(); ?>```
-=======
-# ckeditor
->>>>>>> e30d394cb5f3d1da4c185afc796eedd3e2382903
+```
+
+use dosamigos\ckeditor\CKEditor;
+
+
+<?= $form->field($model, 'text')->widget(CKEditor::className(), [
+        'options' => ['rows' => 6],
+        'preset' => 'basic'
+    ]) ?>
+```
+Using inline edition with basic preset:
+
+```
+
+use dosamigos\ckeditor\CKEditorInline;
+
+<?php CKEditorInline::begin(['preset' => 'basic']);?>
+    This text can be edited now :)
+<?php CKEditorInline::end();?>
